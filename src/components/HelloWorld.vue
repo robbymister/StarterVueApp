@@ -28,7 +28,7 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
     <el-input-number v-model="num" @change="handleChange" :min="1" :max="10" :precision="2" :step="0.1"></el-input-number>
-    <el-date-picker v-model="date" type="date" placeholder="Pick a day" @change="dateHandler" class="date"></el-date-picker>
+    <el-date-picker v-model="dates" type="date" placeholder="Pick a day" @change="dateHandler" class="date"></el-date-picker>
     <el-color-picker v-model="color" @change="colorHandler"></el-color-picker>
   </div>
 </template>
@@ -42,7 +42,7 @@ export default {
   data(){
     return {
       num: 1,
-      date: "",
+      dates: "",
       color: null
     };
   },
